@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f0e5;
+    color: #2e1e0f;
+}
+
+/* HEADER */
+header {
+    background-color: #55215c; /* coklat tanah */
+    color: #fffbea;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 5px solid #361153;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: #ac9f66;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #bc6dc6;
+    color: #a23fa5;
+}
+
+/* KONTEN UTAMA */
+main {
+    max-width: 960px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* SECTION UMUM */
+section {
+    background-color: #f8f9facb;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(92, 133, 54, 0.1);
+    border-left: 6px solid #878f3c;
+}
+
+h2 {
+    color: #0f0f0e;
+    border-bottom: 2px dashed #080707;
+    padding-bottom: 10px;
+}
+
+h3, h4 {
+    color: #504f16;
+}
+
+/* GAMBAR */
+.artikel-img,
+.home-img {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(66, 21, 92, 0.1);
+}
+
+/* BIODATA */
+.bio-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: #e2e4e3e8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    border: 2px solid #7f2591;
+}
+
+.bio-card img {
+    width: 150px;
+    border-radius: 10px;
+    border: 3px solid #681070;
+}
+
+.bio-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.bio-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.bio-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label {
+  font-weight: Bold;
+  width: 150px;
+}
+
+.value {
+  flex: 1;
+  text-align: left;
+}
+
+/* FOOTER */
+footer {
+    background-color:rgb(142, 80, 184);
+    color: #39238ad0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 60px;
+    border-top: 4px solid #9d3bc4;
+}
+
+/* RESPONSIF */
+@media (max-width: 768px) {
+    .bio-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
+    }
+}
